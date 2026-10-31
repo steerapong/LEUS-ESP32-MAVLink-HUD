@@ -12,8 +12,8 @@
 // =====================================================
 
 // WiFi - ใช้ค่าจาก Test 15 เดิม
-const char* WIFI_SSID = "steevapong 2.4G";
-const char* WIFI_PASS = "Teera2512";
+const char* WIFI_SSID = "xxxxxxx";  // ใส่ของที่เราใช้งาน หรือ hotspot ของโทรสัพท์
+const char* WIFI_PASS = "xxxxxxx";
 
 constexpr uint16_t UDP_PORT = 14550;
 constexpr uint32_t HUD_INTERVAL_MS = 100;
@@ -53,7 +53,7 @@ constexpr uint16_t GREEN_C  = 0x4F36;
 constexpr uint16_t RED_C    = 0xF986;
 constexpr uint16_t MUTED    = 0xA534;
 
-// Layout coordinates
+// Layout coordinates ประมาณในเบื้องต้น
 constexpr int CX = 400;
 constexpr int CY = 265;
 constexpr int HORIZON_HALF = 135;
@@ -111,7 +111,7 @@ float normalizeYaw(float yaw)
 
 const char* getFlightMode(uint32_t mode)
 {
-    // ArduCopter custom_mode
+    // ArduCopter โหมดที่ตาดว่ามี ในระบบ
     switch (mode) {
         case 0:  return "STABILIZE";
         case 1:  return "ACRO";
@@ -138,7 +138,7 @@ void drawStaticUI()
     gfx->fillScreen(BG);
 
     // Top bar
-    // LEUS Header - Red Background / White Text
+    // LEUS Header - Red Background / White Text เลือกเอาตามใจ
     constexpr uint16_t LEUS_RED = 0xD104;
 
     gfx->fillRoundRect(12, 8, 185, 42, 6, LEUS_RED);
@@ -210,7 +210,7 @@ void drawStaticUI()
     drawFlightInfoPanel();
 }
 
-// Clip code for Cohen-Sutherland line clipping algorithm
+// Clip code for Cohen-Sutherland line clipping algorithm  ไม่ให้การแสดงผล ของ pitch เกินออกไปทับ แถว roll ด้านบน
 uint8_t clipCode(float x, float y)
 {
     uint8_t code = 0;
@@ -634,10 +634,8 @@ void receiveMavlink()
     }
 }
 
-
-
 // =====================================================
-// Setup
+// เริ่มโปรแกรม 
 // =====================================================
 
 void setup()
