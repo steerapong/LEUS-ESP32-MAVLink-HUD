@@ -1,6 +1,4 @@
-# LEUS-ESP32-MAVLink-HUD
 # LEUS ESP32-S3 MAVLink HUD
-
 **An Open-Source Experimental UAV Flight Display**
 
 Developed by **LEADING EDGE UNMANNED SYSTEMS (LEUS)**
