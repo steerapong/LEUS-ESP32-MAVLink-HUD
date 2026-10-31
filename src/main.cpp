@@ -7,7 +7,7 @@
 #include <math.h>
 
 // =====================================================
-// LEUS HUD - v0.19 Step 3 / Per-Message Timing Policy
+// LEUS HUD - v0.20 Step 3 / Per-Message Timing Policy
 // ESP32-S3 / JC8048W550 / 800x480
 // =====================================================
 
