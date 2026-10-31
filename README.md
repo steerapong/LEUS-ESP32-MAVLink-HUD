@@ -1,6 +1,8 @@
 # LEUS ESP32-S3 MAVLink HUD
 **An Open-Source Experimental UAV Flight Display**
-![รูปหน้าปก](./images/mavlink.jpg)
+
+
+
 Developed by **LEADING EDGE UNMANNED SYSTEMS (LEUS)**
 
 A lightweight UAV flight display built with an ESP32-S3 and a 5-inch RGB LCD. The system receives MAVLink telemetry from an ArduPilot flight controller via Wi-Fi UDP and displays real-time flight information.
