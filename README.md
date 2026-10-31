@@ -40,7 +40,7 @@ UDP Port: `14550`
 
 ## Getting Started
 
-See [Setup Guide](docs/SETUP.md) for installation, configuration, and testing instructions.
+See [Setup Guide](SETUP.md) for installation, configuration, and testing instructions.
 
 ## License
 
